@@ -48,11 +48,6 @@ pip install -r requirements.txt
    ```
    VERTEX_API_KEY=your_vertex_api_key
    ```
-   Or (if using a different environment variable name):
-   ```
-   GEMINI_API_KEY=your_vertex_api_key
-   ```
-
 
 **Note:** This project uses Vertex AI and requires `vertexai=True` parameter
 
@@ -156,3 +151,4 @@ homework1/
 ## License
 
 This project is for learning and assignment purposes only.
+
