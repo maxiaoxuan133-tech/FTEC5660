@@ -9,10 +9,10 @@ An intelligent receipt recognition system that automatically extracts expense in
 -  **Conversational Queries**: Ask questions about receipts, such as:
   - "Total spending?" / "How much money did I spend in total for these bills?"
   - "Amount before discount?" / "How much would I have had to pay without the discount?"
-  - "What did I buy?" / "Show me all items purchased"
+  - "What did I buy?" / "Show me all items purchased."
 -  **Smart Filtering**: Automatically rejects irrelevant queries
 -  **Multiple Receipts**: Upload multiple receipts for unified query and management
--  Uses Google Gemini Vision API for multimodal recognition and natural language understanding
+-  Uses Vertax API for multimodal recognition and natural language understanding
 -  Automatically extracts:
   - Merchant name, amount, date
   - Expense category
@@ -23,7 +23,7 @@ An intelligent receipt recognition system that automatically extracts expense in
   - Payment method
   - Merchant address
 -  User-friendly Gradio web interface with conversational interaction
--  **English Interface**: All text and queries are in English; receipts can be in any language
+-  **English Interface**: All text and queries are in English; receipts can be in both English and Chinese, but if a Chinese Windows system is used, there will be few Chinese words on the interface. It's a gradio system problem, considering the understandability of the files the problem is ignored.
 
 ## Installation
 
@@ -49,7 +49,7 @@ pip install -r requirements.txt
    VERTEX_API_KEY=your_vertex_api_key
    ```
 
-**Note:** This project uses Vertex AI and requires `vertexai=True` parameter
+**Note:** This project uses Vertex AI and requires the `vertexai=True` parameter
 
 ### 4. Run the Program
 
@@ -75,12 +75,12 @@ Enter your question in the text box, for example:
 - **Date query**: "When did I make these purchases?"
 
 ### 3. Submit Query
-- Click "Submit" button
+- Click the "Submit" button
 - The system processes all uploaded images and answers the question
 - If the question is not related to receipts, the system politely declines
 
 ### 4. Clear Conversation
-- Click "Clear" button to clear conversation history
+- Click the "Clear" button to clear the conversation history
 
 ## Project Structure
 
@@ -151,4 +151,5 @@ homework1/
 ## License
 
 This project is for learning and assignment purposes only.
+
 
