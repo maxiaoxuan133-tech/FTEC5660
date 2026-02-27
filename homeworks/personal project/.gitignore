@@ -1,0 +1,35 @@
+*/__pycache__
+__pycache__
+logs
+venv
+.idea
+.DS_Store
+
+# Test outputs - do not commit
+storage/succession/test_version/*
+storage/succession/test_version
+storage/succession/test_version/
+storage/succession/test_version_2/*
+storage/succession/test_version_3/*
+storage/succession/test_version_4/*
+storage/succession/test_version_5/*
+storage/succession/saving/*
+
+./storage/test_version
+./storage/test_version/
+storage/.DS_Store
+./storage/saving
+storage/inputs
+storage/new_test_version
+
+# Temporary files
+temp_log
+temp_log_dir
+process_logs
+cache_folder
+debug.py
+
+# API logs (may contain sensitive info)
+logs/gpt_logs
+logs/glm_logs
+logs/hunyuan_logs
