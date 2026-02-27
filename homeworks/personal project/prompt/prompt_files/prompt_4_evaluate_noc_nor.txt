@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+# @Description: Ask agents to report number of characters and resources in the game
+
+Variables:
+!<INPUT 0>! -- Self Agent ID Number
+!<INPUT 1>! -- Self Agent Description
+!<INPUT 2>! -- Environment Summary
+!<INPUT 3>! -- Action History
+
+<commentblockmarker>###</commentblockmarker>
+
+You are !<INPUT 0>!. Here is your description:
+!<INPUT 1>!
+
+Here is your current environment, and your thought about it:
+!<INPUT 2>!
+
+Here is your Action History：
+!<INPUT 3>!
+
+Please think over before you reply.
+Please output the number of how many characters (including yourself) you think are in this game after "#### Number of Character:". Please only output Arabic numbers, such as 9, 10, 8 and so on, and nothing else.
+Please output the number of how many resources you think are in this game after "#### Number of Resource:". Please only output Arabic numbers, such as 5, 6, 4 and so on, and nothing else.
+Please output your thought process after "#### Thinking:".
+Here is an example of your output:
+### Thinking: I think there are 9 characters in this game because I have seen 9 different character IDs in the action history.
+### Number of Character: 9
+### Number of Resource: 5
+
+Reminder:
+1. Your output must be in English, but should follow the format mentioned above.
+2. Please carefully analyze the action history to determine the number of characters and resources in the game.
+3. Please Don't generate "\n" after ### Response:.
+
+

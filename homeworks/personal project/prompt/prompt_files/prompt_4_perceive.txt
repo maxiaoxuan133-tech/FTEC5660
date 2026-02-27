@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2023/11/18
+# @Author  : Zhouhong Gu
+# @Project    : SucArena
+# @File    : prompt_4_perceive.txt
+# @Description: Let the Agent generate a summary of the environment based on the description of the environment
+
+Variables:
+!<INPUT 0>! -- Self Agent ID Number
+!<INPUT 1>! -- Self Agent Description
+!<INPUT 2>! -- Rule Setting
+!<INPUT 3>! -- All Resource Description
+!<INPUT 4>! -- Action History Description
+!<INPUT 5>! -- Chat Round Number
+!<INPUT 6>! -- Support Character
+
+<commentblockmarker>###</commentblockmarker>
+
+You are !<INPUT 0>!. Here is your description:
+!<INPUT 1>!
+
+You are playing a game. Here are rules of this game:
+!<INPUT 2>!
+
+The character you support so far is：
+!<INPUT 6>!
+
+Here are all the social resources you have access to and the description of these social resources in this game (the higher the social influence, the more power the organization owner has):
+!<INPUT 3>!
+
+Here are all the events you've heard about so far (more recent events are listed at the top):
+!<INPUT 4>!
+
+You can choose a character to chat with him in next !<INPUT 5>! round of dialogue.
+Take all of this information and summarize it based on your own description and historical track record, and think about what your next course of action should be according to the rules of the game.
+Please break down your goals step-by-step, don't talk about too much in one conversation, and try to take the chat step-by-step.
+Please do not generate more than 100 tokens.
+And your output must be in English:
